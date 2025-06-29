@@ -1,0 +1,99 @@
+<svg width="1200" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5cae9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#5c6bc0;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="120" fill="url(#bgGradient)"/>
+  
+  <!-- Title Text -->
+  <text x="40" y="50" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="600" fill="url(#titleGradient)" letter-spacing="1px">Notes and Personal Blog</text>
+  
+  <!-- Subtitle Text -->
+  <text x="40" y="75" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" fill="#b39ddb" opacity="0.9" letter-spacing="0.5px">Data Science &amp; Self Studies</text>
+  
+  <!-- Brain Network Nodes -->
+  <g transform="translate(800, 0)">
+    <!-- Connections -->
+    <line x1="35" y1="25" x2="80" y2="45" stroke="url(#connectionGradient)" stroke-width="1.5" opacity="0.4"/>
+    <line x1="85" y1="45" x2="135" y2="65" stroke="url(#connectionGradient)" stroke-width="1.5" opacity="0.4"/>
+    <line x1="55" y1="85" x2="105" y2="65" stroke="url(#connectionGradient)" stroke-width="1.5" opacity="0.4"/>
+    <line x1="55" y1="85" x2="115" y2="105" stroke="url(#connectionGradient)" stroke-width="1.5" opacity="0.4"/>
+    <line x1="125" y1="30" x2="85" y2="45" stroke="url(#connectionGradient)" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Nodes -->
+    <circle cx="35" cy="25" r="5" fill="#7986cb" filter="url(#glow)" opacity="0.9">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="85" cy="45" r="5" fill="#7986cb" filter="url(#glow)" opacity="0.9">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    
+    <circle cx="145" cy="65" r="5" fill="#7986cb" filter="url(#glow)" opacity="0.9">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    
+    <circle cx="55" cy="85" r="5" fill="#7986cb" filter="url(#glow)" opacity="0.9">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    
+    <circle cx="115" cy="105" r="5" fill="#7986cb" filter="url(#glow)" opacity="0.9">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    
+    <circle cx="125" cy="30" r="5" fill="#7986cb" filter="url(#glow)" opacity="0.9">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite" begin="2.5s"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" begin="2.5s"/>
+    </circle>
+  </g>
+  
+  <!-- Floating Data Points -->
+  <circle cx="840" cy="24" r="2" fill="#9fa8da" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-20; -5,10; 0,0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.8;0.4;0.6" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1020" cy="48" r="2" fill="#9fa8da" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-20; -5,10; 0,0" dur="6s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="opacity" values="0.6;0.8;0.4;0.6" dur="6s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <circle cx="900" cy="72" r="2" fill="#9fa8da" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-20; -5,10; 0,0" dur="6s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="opacity" values="0.6;0.8;0.4;0.6" dur="6s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+  
+  <circle cx="1080" cy="96" r="2" fill="#9fa8da" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-20; -5,10; 0,0" dur="6s" repeatCount="indefinite" begin="3s"/>
+    <animate attributeName="opacity" values="0.6;0.8;0.4;0.6" dur="6s" repeatCount="indefinite" begin="3s"/>
+  </circle>
+</svg>
