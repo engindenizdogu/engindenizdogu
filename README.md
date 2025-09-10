@@ -1,16 +1,9 @@
-![Headspace Banner](./banner.svg)
+### Hi, I’m Engin Deniz Doğu 🙂
 
-#### 2025
-| Duration              | Action    |
-| --------              | -------   |
-| **Feb 17 - March 31** | Book Study: Hands On Machine Learning with Scikit Learn and TensorFlow, Chapters 1-4 |
-| **May 4 - June 29**   | Vibe coded (sort of 🙂) [www.eniyirestoranlar.com](https://www.eniyirestoranlar.com/) to learn how to create an online directory |
-| _**Currently working on...**_       | _a Kaggle competition_ |
-| _**Next Up...**_               | _Review of ML/DL Algorithms_ |
+Welcome to my repository. I’m a master’s student in Machine Learning at Stevens Institute of Technology. 
 
-#### Books
-- Hands on Machine Learning with Scikit Learn Keras and TensorFlow 2nd Edition, Aurélien Geron
-<br>
+Besides this repo, I've created this website as a personal blog and notespace: [Edd's Knowledge Base](https://engindenizdogu.github.io/edds-knowledge-base/)
 
-![Badge](https://img.shields.io/badge/personal%20blog-headspace-blue)
+Have a look around and I hope you’ll find something helpful here! 
+
 ![Made with](https://img.shields.io/badge/made%20with-love-purple?logo=heart)
