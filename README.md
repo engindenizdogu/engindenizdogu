@@ -6,7 +6,7 @@
 
 I'm a master's student specializing in Machine Learning at Stevens Institute of Technology. This repository serves as a collection of my projects and work in the field.
 
-You can also find my personal blog and notespace, [Edd's Knowledge Base](https://engindenizdogu.github.io/edds-knowledge-base/), where I share my thoughts and learnings.
+You can also find my personal blog and notespace, [Harbor](https://engindenizdogu.github.io/harbor/), where I share my thoughts and learnings.
 
 I hope you find the content here interesting and useful!
 
